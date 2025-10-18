@@ -13,13 +13,6 @@ import telebot
 from telebot import types
 from openai import OpenAI
 
-CHAD_API_KEY = "chad-f02c402055e4478da0f1931c1cbcb08284vd7idz"
-request_json = {
-    "message": "Отвечай на следующие запросы как эксперт по выживанию в апокалипсисе,отвечай только на вопросы,связанные с апокалипсисом",
-    "api_key": CHAD_API_KEY
-}
-response = requests.post(url='https://ask.chadgpt.ru/api/public/gpt-4o-mini',
-                         json=request_json)
 
 class FusionBrainAPI:
     def __init__(self, url, api_key, secret_key):
